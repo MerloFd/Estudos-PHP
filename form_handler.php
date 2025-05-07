@@ -10,6 +10,6 @@ $nome = $_POST["nome"] ?? "nome inválido";
     <title>Document</title>
 </head>
 <body>
-    <h1>Olá <?= htmlspecialchars($nome); ?>!</h1>
+    <h1>Olá <?= htmlspecialchars($nome); ?>!</h1> <!-- impede o uso de Cross-Site Scripting, alterando a saida de um input malicioso-->
 </body>
 </html>
